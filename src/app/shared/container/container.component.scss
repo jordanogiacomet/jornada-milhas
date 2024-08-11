@@ -1,0 +1,8 @@
+// Aplicar no hospedeiro, a parte mais de fora do componente;
+// Ele vai ficar contido em 5% pra cada lado;
+:host {
+    display: block;
+    margin: 0 auto;
+    max-width: 1048px;
+    width: 90%;
+}
