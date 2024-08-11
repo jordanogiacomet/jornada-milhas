@@ -1,0 +1,25 @@
+// Queremos aumentar a espeficidade nesse caso;
+// Queremos o botao imediatamente dentro de header;
+
+.app-header {
+    button {
+        margin: 0 16px;
+    }
+
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+    .mat-toolbar {
+        background-color: black;
+        color: white;
+        padding: 0 256px;
+    }
+
+    // O seletor diz o seguinte, essa classe so vai ser aplicada para botoes que nao estiverem desabilitados;
+    // Aplicando assim a cor da borda branca;
+    // SCSS e um pre processador de css; Dar um pouco mais de super poderes para o css;
+    .mat-mdc-outlined-button:not(:disabled) {
+        border-color: white
+    }
+}
